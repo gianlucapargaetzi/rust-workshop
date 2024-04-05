@@ -9,12 +9,15 @@
 //! See if your editor let's you apply these fixes.
 
 pub fn get_first_two_elems(v: &Vec<i32>) -> (i32, i32) {
-    return (v[0], v[1]);
+    (v[0], v[1])
 }
 
-pub fn make_unsigned(x: i32) -> u32 {
-    x.abs() as u32
+fn call_me()
+{
+    println!("Hello from Function");
+    println!("Hello from Function")
 }
+
 
 pub fn floats_are_similar(a: f32, b: f32) -> bool {
     (a - b) < f32::EPSILON
@@ -29,5 +32,5 @@ pub fn read_int_from_str(s: &str) -> i32 {
 }
 
 pub fn get_one_quintillion() -> u64 {
-    1_000_000_000_0000_000
+    10_000_000_000_000_000
 }
